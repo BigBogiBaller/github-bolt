@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useState } from "react"
 import Spline from '@splinetool/react-spline'
-import styles from '../public/styles/globals.css';
+
 
 export function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true)

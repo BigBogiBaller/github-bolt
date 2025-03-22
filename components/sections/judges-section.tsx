@@ -6,6 +6,7 @@ import { Twitter } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image";
 import { useState, useEffect } from "react"
+import axios from "axios";
 
 const judges = [
   {
