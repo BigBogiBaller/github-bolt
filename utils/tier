@@ -1,0 +1,11 @@
+export const getTier = (sponsorName: string): string => {
+  const tiers: { [key: string]: string } = {
+    Supabase: "Diamond",
+    Cloudflare: "Platinum",
+    Algorand: "Gold",
+    Netlify: "Silver",
+    Sentry: "Bronze",
+  };
+
+  return tiers[sponsorName] || "Bronze"; // Default to "Bronze" if no tier is found
+};
