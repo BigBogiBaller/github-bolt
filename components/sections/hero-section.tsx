@@ -3,7 +3,12 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Sparkles } from "lucide-react"
-import Spline from '@splinetool/react-spline'
+import dynamic from 'next/dynamic'
+
+const Spline = dynamic(() => import('@splinetool/react-spline'), {
+  ssr: false,
+  loading: () => <div className="absolute inset-0 bg-gradient-to-br from-violet-900/20 to-blue-900/20" />
+})
 
 export function HeroSection() {
   return (
